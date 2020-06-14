@@ -77,7 +77,6 @@ jobs:
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
-<<<<<<< HEAD
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
@@ -93,9 +92,3 @@ jobs:
         service: demoapp-service
         cluster: default
         wait-for-service-stability: true
-=======
-
-        
-
-   
->>>>>>> 5830104d146d16fe4af37bb10d71361d5040410e
