@@ -65,17 +65,13 @@
   "placementConstraints": [],
   "memory": "2048",
   "taskRoleArn": "arn:aws:iam::772361877131:role/ecsTaskExecutionRole",
-
   "family": "demoapp-task1",
-
   "pidMode": null,
   "requiresCompatibilities": [
     "FARGATE"
   ],
   "networkMode": "awsvpc",
   "cpu": "1024",
-
-
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
   "volumes": []
