@@ -71,7 +71,7 @@ jobs:
       run: |
         # Build a docker container and
         # push it to ECR so that it can
-        # be deployed to ECS.
+        # be deployed to ECS (we hope).
         # NOTE: THIS DOCKER COMMAND WILL PACKAGE UP THE ENTIRE TREE, BUT IT WILL GET "target" too so the Dockerfile still works, I think :)
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
