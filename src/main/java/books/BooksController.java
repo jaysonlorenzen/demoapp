@@ -11,7 +11,7 @@ public class BooksController {
     private static final Book[] books = {
             new Book(1L, "Book One", "Author One"),
             new Book(2L, "Book Two", "Author Two"),
-            new Book(3L, "Book Three", "Author One")};
+            new Book(3L, "Book Three", "Author Three")};
 
     @GetMapping("/books")
     public Book[] books(){
